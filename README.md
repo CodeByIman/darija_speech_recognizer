@@ -15,7 +15,7 @@ A **Minimum Viable Product (MVP)** for speech recognition in **Moroccan Darija**
 <ul>
 <li>🚪 "حل الباب" (ḥall bab) - Open the door</li>
 <li>💡 "شعل الضوء" (šaʿʿal ḍ-ḍaw) - Turn on the light</li>
-<li>📺 "تفيض التلفزة" (tfayeḍ t-talfaza) - Turn on the TV</li>
+<li>📺 "تفي الضو" (tfayeḍ t-talfaza) - Turn on the TV</li>
 </ul>
 </div>
 
