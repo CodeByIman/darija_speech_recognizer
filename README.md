@@ -1,5 +1,4 @@
-# 🗣️ Darija Speech Recognizer & Voice Assistant
-
+# 🗣️ Darija Speech Recognition MVP
 <div align="center" style="margin-bottom: 20px;">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
   <img src="https://img.shields.io/badge/TensorFlow-2.10%2B-orange?logo=tensorflow" alt="TensorFlow">
@@ -7,20 +6,33 @@
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 </div>
 
-A deep learning-powered speech recognition system specifically designed for **Moroccan Darija** (Moroccan Arabic dialect). This project uses advanced neural networks to recognize voice commands and can be deployed as a web application.
+A **Minimum Viable Product (MVP)** for speech recognition in **Moroccan Darija** (Moroccan Arabic dialect). This is a proof-of-concept project that recognizes three basic voice commands using a small, self-collected dataset.
 
 ## 🎯 Project Overview
 
-<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #FFD700; margin: 15px 0;">
-The goal is to recognize short voice commands in Moroccan Darija like "فتح الباب" (open the door), "شعل الضوء" (turn on the light), etc., and test them via a simple command-line assistant.
+<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #007acc; margin: 15px 0;">
+<strong>MVP Scope:</strong> This project currently recognizes 3 basic Darija commands:
+<ul>
+<li>🚪 "حل الباب" (ḥall bab) - Open the door</li>
+<li>💡 "شعل الضوء" (šaʿʿal ḍ-ḍaw) - Turn on the light</li>
+<li>📺 "تفيض التلفزة" (tfayeḍ t-talfaza) - Turn on the TV</li>
+</ul>
 </div>
 
-This project includes:
-- 🧠 A trained speech recognition model
-- 💬 A CLI assistant to test predictions  
-- 🎧 Test audio samples
-- 📓 A Jupyter notebook for training
-- ⚙️ Scripts to run and interact with the model
+**Current Status:** This is an early-stage experiment with a limited dataset collected manually. The goal is to demonstrate the feasibility of Darija speech recognition and serve as a foundation for future expansion.
+
+### What's included:
+- 🤖 Basic neural network model for 3-command recognition
+- 🎤 Simple CLI tool to test voice commands
+- 📊 Small training dataset (self-collected)
+- 📓 Jupyter notebook showing the training process
+- 🔧 Basic prediction and testing scripts
+
+### Limitations:
+- **Limited vocabulary:** Only 3 commands currently supported
+- **Small dataset:** Training data is limited and self-collected
+- **Prototype quality:** This is an MVP/proof-of-concept, not production-ready
+- **Accuracy:** Recognition accuracy may vary due to dataset size
 
 ---
 
