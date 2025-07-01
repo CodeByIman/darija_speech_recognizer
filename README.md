@@ -29,55 +29,6 @@ This project includes:
 ### Deep Learning Models Used
 
 #### 1. **Primary Model: Multi-Layer LSTM Network**
-```mermaid
-graph TD
-    A[MFCC Features] --> B[LSTM 128 units]
-    B --> C[Dropout 0.3]
-    C --> D[LSTM 64 units]
-    D --> E[Dropout 0.3]
-    E --> F[LSTM 32 units]
-    F --> G[Dropout 0.3]
-    G --> H[Dense 64 units]
-    H --> I[Dropout 0.5]
-    I --> J[Dense 32 units]
-    J --> K[Output N classes]
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🗣️ Darija Speech Recognizer & Voice Assistant
-
-A deep learning-powered speech recognition system specifically designed for **Moroccan Darija** (Moroccan Arabic dialect). This project uses advanced neural networks to recognize voice commands and can be deployed as a web application.
-
-## 🎯 Project Overview
-
-The goal is to recognize short voice commands in Moroccan Darija like "فتح الباب" (open the door), "شعل الضوء" (turn on the light), etc., and test them via a simple command-line assistant.
-
-This project includes:
-- 🧠 A trained speech recognition model
-- 💬 A CLI assistant to test predictions  
-- 🎧 Test audio samples
-- 📓 A Jupyter notebook for training
-- ⚙️ Scripts to run and interact with the model
-
-The system combines traditional audio signal processing with modern deep learning techniques to achieve accurate speech recognition for the Darija dialect.
-
----
-
-## 🧠 Model Architecture & Technology Stack
-
-### Deep Learning Models Used
-
-#### 1. **Primary Model: Multi-Layer LSTM Network**
 ```
 Input: MFCC Features (40 features × 100 time steps)
     ↓
