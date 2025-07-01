@@ -1,5 +1,61 @@
 # 🗣️ Darija Speech Recognizer & Voice Assistant
 
+<div align="center" style="margin-bottom: 20px;">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/TensorFlow-2.10%2B-orange?logo=tensorflow" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/LibROSA-0.9%2B-yellow" alt="LibROSA">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</div>
+
+A deep learning-powered speech recognition system specifically designed for **Moroccan Darija** (Moroccan Arabic dialect). This project uses advanced neural networks to recognize voice commands and can be deployed as a web application.
+
+## 🎯 Project Overview
+
+<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #FFD700; margin: 15px 0;">
+The goal is to recognize short voice commands in Moroccan Darija like "فتح الباب" (open the door), "شعل الضوء" (turn on the light), etc., and test them via a simple command-line assistant.
+</div>
+
+This project includes:
+- 🧠 A trained speech recognition model
+- 💬 A CLI assistant to test predictions  
+- 🎧 Test audio samples
+- 📓 A Jupyter notebook for training
+- ⚙️ Scripts to run and interact with the model
+
+---
+
+## 🧠 Model Architecture & Technology Stack
+
+### Deep Learning Models Used
+
+#### 1. **Primary Model: Multi-Layer LSTM Network**
+```mermaid
+graph TD
+    A[MFCC Features] --> B[LSTM 128 units]
+    B --> C[Dropout 0.3]
+    C --> D[LSTM 64 units]
+    D --> E[Dropout 0.3]
+    E --> F[LSTM 32 units]
+    F --> G[Dropout 0.3]
+    G --> H[Dense 64 units]
+    H --> I[Dropout 0.5]
+    I --> J[Dense 32 units]
+    J --> K[Output N classes]
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 🗣️ Darija Speech Recognizer & Voice Assistant
+
 A deep learning-powered speech recognition system specifically designed for **Moroccan Darija** (Moroccan Arabic dialect). This project uses advanced neural networks to recognize voice commands and can be deployed as a web application.
 
 ## 🎯 Project Overview
@@ -251,13 +307,6 @@ python darija_voice_assistant.py
 - [ ] **Voice Activity Detection**: Automatic speech segment detection
 - [ ] **Speaker Adaptation**: Personalized models for different speakers
 
-### Application Features
-- [ ] **Mobile App**: Flutter/React Native implementation
-- [ ] **IoT Integration**: Smart home device control
-- [ ] **Cloud API**: RESTful API service
-- [ ] **Voice Feedback**: Text-to-speech responses in Darija
-- [ ] **Conversation Context**: Multi-turn dialogue understanding
-
 ---
 
 ## 🤝 Contributing
@@ -277,11 +326,6 @@ We welcome contributions! Here's how you can help:
 - **Documentation**: Improve code documentation
 - **Testing**: Add unit tests and integration tests
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -303,13 +347,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/CodeByIman/darija_speech_recognizer/discussions)
 
 ---
-
-## 📚 Technical References
-
-### Research Papers
-- "Deep Speech Recognition for Moroccan Darija"
-- "LSTM Networks for Speech Recognition"
-- "MFCC Feature Extraction for Audio Classification"
 
 ### Key Technologies
 - **TensorFlow**: https://tensorflow.org
