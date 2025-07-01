@@ -212,42 +212,6 @@ python darija_voice_assistant.py
 # 3. Display predictions with confidence scores for each sample
 ```
 
-### Programmatic Usage
-```python
-from darija_speech_recognizer import DarijaSpeechRecognizer
-
-# Load trained model
-recognizer = DarijaSpeechRecognizer()
-recognizer.load_trained_model('deployment_model')
-
-# Predict single audio file
-intent, confidence, probabilities = recognizer.predict_audio('test_audio.wav')
-print(f"Predicted Intent: {intent}")
-print(f"Confidence: {confidence:.3f}")
-```
-
-### Web App Integration (Streamlit)
-```python
-import streamlit as st
-import tempfile
-
-@st.cache_resource
-def load_model():
-    recognizer = DarijaSpeechRecognizer()
-    recognizer.load_trained_model('deployment_model')
-    return recognizer
-
-def main():
-    st.title("🎤 Darija Speech Recognition")
-    recognizer = load_model()
-    
-    uploaded_file = st.file_uploader("Upload Audio", type=['wav', 'mp3'])
-    if uploaded_file:
-        # Process and predict...
-```
-
----
-
 ## 📊 Model Performance
 
 ### Expected Performance Metrics
@@ -256,48 +220,11 @@ def main():
 - **Inference Time**: <1 second per audio file
 - **Model Size**: ~2-5 MB
 
-### Supported Darija Commands
-The model recognizes voice commands based on the intents defined in your `augmented_data.csv` file. The exact commands and categories depend on your training data.
-
 **Test Audio Files Available:**
 - `7allbab.wav` - Test sample
 - `cha3aldo.wav` - Test sample
 - `tfido.wav` - Test sample
 
-*Note: The specific intents and Darija phrases are loaded from your training dataset.*
-
----
-
-## 🌐 Deployment Options
-
-### 1. **Streamlit Web App**
-```bash
-streamlit run streamlit_app.py
-```
-
-### 2. **Flask API**
-```python
-from flask import Flask, request, jsonify
-
-app = Flask(__name__)
-recognizer = load_model()
-
-@app.route('/predict', methods=['POST'])
-def predict():
-    # Handle audio upload and prediction
-    pass
-```
-
-### 3. **Docker Deployment**
-```dockerfile
-FROM python:3.9-slim
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["streamlit", "run", "app.py"]
-```
-
----
 
 ## 🔧 Advanced Features
 
