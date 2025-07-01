@@ -20,7 +20,6 @@ darija_env_310_tf/
 # 🧠 Modèles, fichiers lourds, résultats
 *.h5
 *.pkl
-*.wav
 *.log
 *.ckpt
 *.tflite
