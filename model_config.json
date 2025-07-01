@@ -1,0 +1,14 @@
+{
+  "model_path": "darija_speech_model.h5",
+  "encoder_path": "label_encoder.pkl",
+  "feature_dim": 40,
+  "max_length": 100,
+  "num_classes": 3,
+  "classes": [
+    "open_door",
+    "turn_off_light",
+    "turn_on_light"
+  ],
+  "sample_rate": 22050,
+  "audio_duration": 3.0
+}

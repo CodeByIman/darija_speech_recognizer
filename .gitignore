@@ -1,0 +1,34 @@
+# 🐍 Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+
+# 📦 Environnements virtuels (plusieurs noms possibles)
+.venv/
+venv/
+env/
+ENV/
+darija_env_310_tf/
+.darija_env_310_tf/
+
+# ⚙️ Fichiers de configuration de l'éditeur
+.vscode/
+
+# 🔐 Variables d'environnement
+.env
+
+# 🧠 Modèles, fichiers lourds, résultats
+*.h5
+*.pkl
+*.wav
+*.log
+*.ckpt
+*.tflite
+*.pb
+
+# 🧪 Notebooks temporaires
+.ipynb_checkpoints/
+
+# 📄 Système
+.DS_Store
+Thumbs.db
